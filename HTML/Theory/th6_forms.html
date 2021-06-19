@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>Simple form</h2>
+    <form>
+        <label for="name">Name:<input type="text" id="name" name="username" placeholder="Your Username"></label>
+        <br>
+        <!-- required enforces u to enter a value it cant be empty -->
+        <label for="email">Email id:<input type="email" id="email" name="email" placeholder="Your Email"
+                required></label>
+        <br>
+        <label for="password">Password: <input type="password" name="password" id="password" placeholder="Password"
+                required></label>
+        <br>
+        <!-- U can set default values using value -->
+        <label for="age">Age:<input type="number" id="age" name="age" placeholder="Your age" min="18" m ax="110"
+                value="20"></label>
+        <br>
+        <input type="hidden" name="some-hidden-field" value="some-value">
+        <br>
+        <!-- We can use regular expressions using pattern -->
+        <!-- <input type="text" name="username" pattern="[a-zA-Z]{8}"> -->
+        <!-- <br> -->
+
+        <!-- Radio buttons -->
+        <p>Choose color</p>
+        <label for="colorRed">Red:<input type="radio" id="colorRed" name="color" value="red"></label>
+        <br>
+        <label for="colorGreen">Green:<input type="radio" id="colorGreen" name="color" value="green"></label>
+        <br>
+        <label for="colorYellow">Yellow:<input type="radio" id="colorYellow" name="color" value="yellow"></label>
+        <br>
+
+        <!-- Checkboxes -->
+        <p>Choose from ur delicacies</p>
+        <label for="biryani">Biryani:<input type="checkbox" id="biryani" name="food" value="biryani"></label>
+        <br>
+        <label for="pawbhaji">Paw Bhaji:<input type="checkbox" id="pawbhaji" name="food" value="pawbhaji"></label>
+        <br>
+        <label for="choleBhature">Chole Bhature:<input type="checkbox" id="choleBhature" name="food"
+                value="choleBhature"></label>
+        <br>
+        <input type="submit" value="Click Me">
+
+        <!-- Select -->
+        <select name="color">
+            <option value="">None</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+        </select>
+
+        <select name="color">
+            <optgroup label="Primary">
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="blue">Blue</option>
+            </optgroup>
+            <optgroup label="Others">
+                <option value="green">Green</option>
+                <option value="pink">Pink</option>
+            </optgroup>
+        </select>
+
+    </form>
+</body>
+
+</html>
