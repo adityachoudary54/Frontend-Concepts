@@ -1,7 +1,6 @@
-# Frontend-Concepts
 Will revise frontend concepts in this repo
-```
-   HTML
+```.gitattributes
+HTML
    |-- (IMP)html-handbook.pdf
    |-- Theory
    |   |-- images
@@ -14,4 +13,5 @@ Will revise frontend concepts in this repo
    |   |-- th6_forms.html
    |   |-- th7_tables.html
    |-- robbins.pdf
-   ```
+README.md
+```
