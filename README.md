@@ -14,4 +14,6 @@ HTML
    |   |-- th7_tables.html
    |-- robbins.pdf
 README.md
+push.bat
+updateReadme.py
 ```
